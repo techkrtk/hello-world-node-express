@@ -7,11 +7,11 @@ app.get("/", function (req, res) {
 });
 
 app.get("/ping", function (req, res) {
-  res.send("Pong");
+  res.send({ resp: "Pong" });
 });
 
 app.get("/ping/ping", function (req, res) {
-  res.send("Pong pong");
+  res.send({ resp: "Pong pong" });
 });
 
 // Listen
